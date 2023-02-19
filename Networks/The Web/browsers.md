@@ -4,7 +4,7 @@
 
 2. **🧠Cache** - Websites can push copy of frequently used images and files (incl. webpages) in to your browser's memory and for this purpose browsers have temporary storage called cache. Which is basically what...a little share of your system disk storage??? I've not dug further on this. This is usually in MBs say 10-20 MBs, well that depends on for how long you've running your browser (and how long back you cleared-up the browsing data). Why cache is important? It's a talk in itself.
 
-3. **🔄Autofills** (aka Form Data) - when user fills out a form (rather whole page filled with I/O boxes, the form could also mean even one input field) on a website, the browser stores that data (called form data) so as to prompt when user goes on to fill the same or similar form. This helps user to fill the form quickly with minimum/no changes.
+3. **🔄Autofills** (aka Form Data) - when user fills out a form (rather whole page filled with I/O boxes, the form could also mean even one input field) on a website, the browser stores that data (called form data) so as to prompt it when user goes on to fill the same or similar form next time. This helps user to fill the form quickly with minimum/no changes. 
 
 4. **⚙️Site settings** - Basically a user-customizable cookie! It lets user control their permissions and preferences, such as website's access to their location, microphone, or camera, and whether the site is allowed. IDK whey they didn't termed it 'home decor'.
 
