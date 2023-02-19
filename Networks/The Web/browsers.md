@@ -6,7 +6,7 @@
 
 3. **🔄Autofills** (aka Form Data) - when user fills out a form (rather whole page filled with I/O boxes, the form could also mean even one input field) on a website, the browser stores that data (called form data) so as to prompt it when user goes on to fill the same or similar form next time. This helps user to fill the form quickly with minimum/no changes. 
 
-4. **⚙️Site settings** - Basically a user-customizable cookie! It lets user control their permissions and preferences, such as website's access to their location, microphone, or camera, and whether the site is allowed. IDK whey they didn't termed it 'home decor'.
+4. **⚙️Site settings** - Basically a user-customizable cookie! It lets user control their permissions and preferences, such as website's access to their location, microphone, or camera, and whether the site is allowed to show notifications or play audio. IDK whey they didn't termed it 'home decor'.
 
 5. **ℹ️ Hosted app data** - Assumingly an idea by Chromebook designers, it is the data stored by 'web-apps' that in-turn installed as 'hosted app' in the user's browser and functions like a native app, but only on the web-browser. Interestingly, the hosted app could even function when you're offline, if the app is designed for such intents and purposes.
 
