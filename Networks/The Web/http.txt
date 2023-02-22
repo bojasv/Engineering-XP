@@ -1,0 +1,47 @@
+Response:
+POST /oauth2/v1/tokens/bearer?grant_type=authorization_code&code
+  =AB116770527453U7sOuQeFQ6Ehqw7Q201xYiswBEv1pNP45rja&redirect_uri=https
+  ://developer.intuit.com/v2/OAuth2Playground/RedirectUrl
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: Basic 
+  QUJua2ZGWlBtcEdoR2JNazByMUNPU1EwVjlWblV1bWVRYlo5RnVuMXNyUVZBSk41TFU6OEpDNUpWU
+  WVZaW55amg2aDNKSEJNcFlWN2JkNnVHdmpFSWRkaGtZQQ==
+
+Request:
+Status: 200
+Connection: keep-alive
+Keep-Alive: timeout=5
+Strict-Transport-Security: max-age=15552000
+Cache-Control: no-cache, no-store
+Content-Type: application/json;charset=utf-8
+Server: nginx
+{
+ "refreshToken": "AB11685778852UUZsFOY1aDOc75dQT6t3vWxdS0NW5C40LI3UM",
+ "accessToken": "eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0
+     ..GU8bCdILZ2umthlL6gRSLw.LEs9PNy7F6WaeRmF6DMdoLZsBAOqKguQKd3D6JL
+     -XqSU1cBE7-dqvLgV0DRZJ1Zi39DawBeVTOoR24n2eaLAbP9cEqSTgTEtiwUOC3lFYxHnqm2r
+     sP6bdZxMFhNKrFQSQU286grq_hbN3Zr-YDaZjyoOTwOF9pL7QKcYFQLUfR
+     -y5D4HGwxsSBHwvpYMi94zYk7LBY_1OwhS
+     -L5DghzDfqRsO0QLq1SQCgwLHmSGZpsFmr56dmAdrD3Sem5zcGopngcsomly6BUNBsPbI09v2
+     v4lZBMTzWoqJMCvyGXtkTZaxGirQwSQrjJBxO3_0VpeY4Dmc0xlrgxCrBv1kf5qPvFjvwTJ6T
+     -umGzvx8wgQ3ozDkRGluhhhb2OPpG0w7ID4eErq4qmisx8hMlWE5pdEQ4BMvx_aAcCfwTJTrh
+     nOFMl3-fIeArzMzmVJWqLp0hgwTsE6dD3Buv087bOteYbb57BYRpknkxLXl_UGN7GeuSHc2wk
+     phk9v-5QytxdYeIPh9QpZ7f3FcN6cqn8In0Akw-UC15k
+     -krbC4CPlw2xafbhR2E8CccYpkLq5UXdc9RyH274YkCoe9l
+     --TUn7V8uRWe1hav1X0BaQeYj02AMwtvsqs4W2NXGTT_Ms5r8tAcjeEGfnnbokKHyHooE2wyi
+     93jFW6fOEvISPlQOOlYTB5JyITrw0W5DskyK6HCmd2MdnL_wWKvevsAFaRus0zLEOMrGyBBid
+     sLhBf86_OMAh0GU1oN3EcVpYxAVl3PKLjB-.w8fQ1gYfnp9xdfohYc6mmg",
+ "expires_in": 3600,
+ "x_refresh_token_expires_in": 8726400
+}
+
+Auth Code: AB116770527453U7sOuQeFQ6Ehqw7Q201xYiswBEv1pNP45rja
+
+Access Token: 60 mins (i.e 3600 sec)
+Refresh Token: 101 days (i.e. 8726400 sec, or 145440 mins or 2424 hrs)
+Strict Transport Security: 180 days (i.e. 15552000 sec, or 259200 mins or 4320 hrs)
+
+
+
+Ref: https://developer.intuit.com/app/developer/playground?code=AB116770527453U7sOuQeFQ6Ehqw7Q201xYiswBEv1pNP45rja&state=PlaygroundAuth&realmId=4620816365273668780
