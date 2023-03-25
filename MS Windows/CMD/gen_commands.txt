@@ -1,8 +1,0 @@
-ping /?
-opens ping help section
-
-ping 142.250.193.206 -t 
-pings indefinitely. CMD window doesn't closes automatically.
-
-ping -a 142.250.193.206
-returns host-name resolved by the DNS, 'Pinging del11s17-in-f14.1e100.net [142.250.193.206] with 32 bytes of data:'
