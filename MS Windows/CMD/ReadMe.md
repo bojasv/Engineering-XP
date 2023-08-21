@@ -1,7 +1,13 @@
 # DOS Batch Language
 
+1980 (Aug) - DOS got first developed as 86-DOS, i.e. an OS for Intel 8086 by a Seattle (Washington) based repair technician turned hardware engineer, Tim Paterson. When he first began work on it in Apr 1980, he named it QDOS (Quick and Dirty Operating System) ;)
+
 .BAT -> BATch of executable commands
-.CMD -> a script containing one or multiple CoMManDs 
+.CMD -> a script containing one or multiple CoMManDs
+.DAT -> a file having data (can be binary CLOB, CSV, or even XML)
+.EXE -> executable binary code for MS Windows (pre-interpreted by compiler, stores pure computer instructions) - similar to Objects on IBM i?
+
+
 
 Commands are executed in serial order
 It helps automate routine tasks without requiring user input or intervention. 
@@ -29,7 +35,7 @@ To run the script, hit enter.
 The `@` makes the output of the echo off command hidden as well.
 
 ### Comments
-Use `::` or `rem` at the beginning of the comment-line
+Use `::` or `rem` at the beginning of the comment-line. `rem` is short for remark.
 
 ### Differences
 - `.cmd` or `.bat`:
@@ -40,6 +46,14 @@ Use `::` or `rem` at the beginning of the comment-line
   rem 
   netsh wlan show profile name= "Dory 5G" key=clear > System_Report.txt
   wmic cpu list brief >> System_Report.txt
+
+## CMD Command
+If you wish to stop the computer in the midst of executing the current command, you may use the key sequence Ctrl-Break. Ctrl-Break does not always work with non-DOS commands.
+
+**Function Keys**
+F11 - Toggles Full Screen
+F9 - copies command to command line (if you know the command #), else use F8
+F8 - cycles thru recently entered commands, can also work like wildcard search (press 'c' and F8 could fetch clr, clear, chkdsk ...)
 
 ## WMIC Commands for Global Switches
 Use `wmic /?` to get the list, here's the dummy output
@@ -159,3 +173,78 @@ For more information on a specific alias, type: alias /?
  
 For more information on CLASS/PATH/CONTEXT, type: (CLASS | PATH | CONTEXT) /?
 ```
+
+## Ping
+`General failure.` -> either IP is incorrect or most likely you're disconnected
+`PING: transmit failed. General failure.` -> either IP is incorrect or most likely you're disconnected
+`Request timed out.` -> glitch in the internet?
+`Reply from ::1: time<1ms` -> localhost is fine
+`Reply from 127.0.0.1: bytes=32 time<1ms TTL=128` -> localhost is fine
+`Reply from 142.250.192.163: bytes=32 time=19ms TTL=115` -> internet is working fine
+
+```
+Microsoft Windows [Version 10.0.21996.1]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL>ping localhost
+
+Pinging PCNAME-L5490 [::1] with 32 bytes of data:
+Reply from ::1: time<1ms
+Reply from ::1: time<1ms
+Reply from ::1: time<1ms
+Reply from ::1: time<1ms
+
+Ping statistics for ::1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+C:\Users\DELL>ping 127.0.0.0
+
+Pinging 127.0.0.0 with 32 bytes of data:
+General failure.
+General failure.
+General failure.
+General failure.
+
+Ping statistics for 127.0.0.0:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\Users\DELL>ping 127.0.0.1
+
+Pinging 127.0.0.1 with 32 bytes of data:
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+
+Ping statistics for 127.0.0.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+C:\Users\DELL>ping 0.0.0.1
+
+Pinging 0.0.0.1 with 32 bytes of data:
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+PING: transmit failed. General failure.
+
+Ping statistics for 0.0.0.1:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\Users\DELL>ping www.google.co.in
+
+Pinging www.google.co.in [142.250.192.163] with 32 bytes of data:
+Reply from 142.250.192.163: bytes=32 time=19ms TTL=115
+Reply from 142.250.192.163: bytes=32 time=21ms TTL=115
+Reply from 142.250.192.163: bytes=32 time=18ms TTL=115
+Reply from 142.250.192.163: bytes=32 time=18ms TTL=115
+
+Ping statistics for 142.250.192.163:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 18ms, Maximum = 21ms, Average = 19ms
+
+C:\Users\DELL>```
