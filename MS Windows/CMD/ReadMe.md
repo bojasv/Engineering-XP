@@ -245,4 +245,19 @@ Ping statistics for 142.250.192.163:
 Approximate round trip times in milli-seconds:
     Minimum = 18ms, Maximum = 21ms, Average = 19ms
 
-C:\Users\DELL>```
+C:\Users\DELL>
+```
+
+## Drawing comparisions between IBM i and DOS after learning and working with IBM i for years.
+- .exe <-> objects (as both have machine code) or *PGM (as both have single entry point)
+- .dll <-> *SRVPGM (as both have multiple entry points)
+- .h <-> copybooks (as both copies program source code to a new program) 
+- powershell <-> QSH (both can run from the command line)
+
+*Similarities in Command Names*
+- `/TITLE` - In DOS it re-titles CMD window, while in IBM i it gives title to (RPG) compiler listings or copybooks.
+- IFS Commands
+  - `mkdir`
+
+*Commands unique to DOS*
+*Commands Unique to IBM i*
