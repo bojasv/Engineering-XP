@@ -181,3 +181,11 @@ ConHost
 ::another e.g. 'cmd /k echo Hello' . It will launched CMD, prints 'Hello' and waits for next command.
 
 cmd /k tzutil /s "India Standard Time"
+
+::use CMD as a dirty calculator. rounds off digits to 0 decimal places.
+set /a 5*2/3+10
+::13
+set /a 5*0/3+10
+::10
+set /a 5*2/0+10
+::Divide by zero error.
