@@ -157,6 +157,28 @@ WMIC.exe
 NetSh
 ::launches Network Shell in CMD.exe
 
+Py -m ensurepip --upgrade
+::Python module names (e.g. ensurepip) and arguments (e.g. upgrade) are case-sensitive
+::pre-requisite before installing Python (often auto-installed)
+
+PIP
+::Package Installer for Python (PIP, commonly lo-cased as pip)
+::now a recursive acronym for 'Preferred Installer Program' or 'PIP Installs Packages'
+::pip retrieves packages from the Python Package Index (PyPI).
+::alt command `pip3`. PIP is generally connect with Python 2 in Linux and Mac, whereas pip3 is related to Python 3.
+
+Python
+::If installed, then it launches following file
+::C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__zzz9z9zzzz9z9\python3.10.exe
+::alt command `py`
+::alt command `python -v`. It provides loaded Python modules during environment initialization and exit.
+::`-v` for Virtual Environment???
+
+Py -V
+::Installed version of Python
+::alt command `python -V`
+::`-V` for Version
+
 ConHost
 ::launches Console Window Host - It is the server application for all of the Windows Console APIs, also acts as CMD
 ::located at path `%windir%\System32\conhost.exe`
@@ -189,3 +211,9 @@ set /a 5*0/3+10
 ::10
 set /a 5*2/0+10
 ::Divide by zero error.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:: How to access Unix from CMD ???
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::one easy way to access a Unix command line shell is to download and install Cygwin
+::or use Xming, it provides graphical access to Unix from the Windows desktop
