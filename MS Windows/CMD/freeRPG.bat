@@ -1,4 +1,5 @@
 :: script to kickoff RPGfreeWeb utility
+:: make sure you've node.js installed
 :: https://github.com/worksofbarry/rpgfreeweb
 
 @echo off
