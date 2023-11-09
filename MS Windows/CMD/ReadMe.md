@@ -261,3 +261,10 @@ C:\Users\DELL>
 
 *Commands unique to DOS*
 *Commands Unique to IBM i*
+
+## How to create and access dump files (.DMP) on Windows?  
+- Task Manager > Details > *pick any process from the first column* > Right Click > 'Create dump file'
+- Dump process starts, writes dump info to the file. This may take few seconds or minutes depending on the physical memory consumption
+  - minimum memory consumption is 0K or 8K, and there after in multiples of 8. I've seen chrome.exe consuming in orders of 700,000K.
+- The .dmp file gets created at path 'C:\Users\PCNAME\AppData\Local\Temp\chrome.DMP'
+- To verify and read dump file, install the Microsoft Crash Dump File Checker tool [Dumpchk.exe]([url](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk#where-to-get-dumpchk)https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk#where-to-get-dumpchk). It is a command-line utility by MS Windows.
