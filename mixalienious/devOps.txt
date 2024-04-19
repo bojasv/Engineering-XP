@@ -1,0 +1,40 @@
+DevOps - short of Development + Operations 
+
+              -------------[Dev]------------   ----------------[Ops]----------------
+DevOps Cycle - [Plan > Code > Build > Test ] + [Relase > Deploy > Operate > Monitor > Plan]
+                     (>>>>> CI >>>>>)(>>>>>>>>>>> CD >>>>>>>>>>>)
+              >>>>>>>)               (>>>>>>> CD >>>>>>)        (>>>>>>>>>>>> CF >>>>>>>>>>
+
+CI - Contenuous Integration
+CD - Contenuous Deployment
+CF - Contenuous Feedback
+CD - Contenuous Delivery
+
+[Dev > CD > Test]
+--- can plug Analytics tool ---
+[Ops > CD > Release]
+
+[Dev > CF > Plan]: JIRA/Slack/MSTeams/Trello/Visual Paradigm
+[Dev > CI > Code]: Git/VSCode/Eclipse/GitLab/BitBucket/Terraform/Subversion/Perforce/JFrog Artifactory
+[Dev > CI > Build]: Gradle/Maven/Apache Ant
+[Dev > CD > Test]: Selenium/SonarQube/JUnit/Apache JEMeter/Postman/SoapUI - Basically Test Automation
+[Analytics]: Tableau, NewRelic
+[Ops > CD > Release]: Jenkins/Docker
+[Ops > CD > Deploy]: Kubernetes/Git
+[Ops > CF > Operate]: RedHat Ansible/Puppet
+[Ops > CF > Monitor]: Splunk
+[Ops > CF > Plan]
+[Ops > CD > Test]
+[Ops > CD > Release]
+
+Scripting - Bash, Perl, Python, Groovy
+Virtualization
+Containerization
+
+
+
+Jenkins - 
+Docker - 
+Ansible - 
+Kubernetes - 
+Maven - 
