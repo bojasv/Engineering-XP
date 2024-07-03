@@ -268,3 +268,7 @@ C:\Users\DELL>
   - minimum memory consumption is 0K or 8K, and there after in multiples of 8. I've seen chrome.exe consuming in orders of 700,000K.
 - The .dmp file gets created at path 'C:\Users\PCNAME\AppData\Local\Temp\chrome.DMP'
 - To verify and read dump file, install the Microsoft Crash Dump File Checker tool [Dumpchk.exe]([url](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk#where-to-get-dumpchk)https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk#where-to-get-dumpchk). It is a command-line utility by MS Windows.
+
+## How to list all files and folders in drive on Windows?  
+- Following command lists all files and folders in C drive
+- `tree C:\ /F >> C:\Users\DELL\Downloads\filesystem.txt`
