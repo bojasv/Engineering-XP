@@ -7,3 +7,5 @@ try {
     Write-Host 'Microsoft Windows App Runtime reinstalled successfully.' -ForegroundColor Green} 
 catch { 
     Write-Host 'Failed to reinstall Microsoft Windows App Runtime.' -ForegroundColor Red}
+# check the pkg in the list 
+(Get-AppxPackage "micro*win*appruntime*" -AllUsers).PackageFullName 
